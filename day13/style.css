@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: Helvetica;*/
+    
+}
+
+body{
+    background-color: black;
+}
+
+.header{
+    margin: 10px 0px 0px 0px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid seashell;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+.logo{
+    margin: 0;
+    padding: 25px 5px;
+   /* border: 1px solid red; */
+    font-family: 'Ephesis', cursive;
+    font-size: 40px;
+    color: rgb(199, 196, 196);
+
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 25px 5px;
+    /*border: 1px solid blue;*/
+    display: flex;
+    list-style-type: none;
+
+}
+
+.navigation ul li{
+    margin: 11px 20px;
+    font-size: 25px;
+
+}
+
+.navigation ul li a{
+    color: rgb(199, 196, 196);
+}
+
+.main{
+    background-color: black;
+    margin: 0px 50px; 
+}
+
+.main .head .imgbox{
+    height: 700px;
+
+}
+
+.main .head .imgbox img{
+    width: 100%;
+    height: 700px;
+}
+
+.main .head .imgbox .mission{
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    padding: 30px 0px;
+    width: 100%;
+
+}
+
+.mission h2{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(199, 196, 196);
+    font-family: helvetica;
+    padding: 5px 0px;
+
+}
+
+.mission h4{
+    text-align: center;
+    font-size: 30px;
+    font-family: helvetica;
+    color: rgb(199, 196, 196);
+
+}
+
+.product{
+    margin: 15px 100px;
+    padding: 15px 20px; 
+
+}
+
+.description h2 {
+    color: rgb(199, 196, 196);
+    text-align: center;
+    font-family: helvetica;
+    font-size: 50px;
+}
+
+.description p{
+    color: rgb(199, 196, 196);
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 30px;
+    margin: 30px 0px;
+}
+
+.teaitems1{
+    display: flex; 
+    justify-content: center;  
+    padding-bottom: 50px;
+}
+
+.teaitems1 .item img{
+    height: 200px;
+    width: 300px;
+    margin-left: 80px;
+
+}
+
+.teaitems2{
+    display: flex; 
+    justify-content: center; 
+    padding-bottom: 20px; 
+}
+
+.teaitems2 .item img{
+    height: 200px;
+    width: 300px;
+    margin-left: 80px;
+
+}
+
+.teaitems1 .item p{
+    color: rgb(199, 196, 196);
+    text-align: center;
+    margin: 10px 0px 0px 80px;
+    font-family: Helvetica;
+    font-size: 22px;
+}
+
+.teaitems2 .item p{
+    color: rgb(199, 196, 196);
+    text-align: center;
+    margin: 10px 0px 0px 80px;
+    font-family: Helvetica;
+    font-size: 22px;
+}
+
+.location{
+    margin: 50px 0px 0px 0px;
+    height: 500px;
+    background-image: url('https://thumbs.dreamstime.com/b/transparent-cup-black-tea-background-colorful-festive-background-mood-holiday-transparent-cup-202808906.jpg');
+    background-size: contain;
+}
+
+.location h2{
+    font-family: helvetica;
+    color: rgb(199, 196, 196);
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+}
+
+.addrs{
+    
+    margin: 5px 5px;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.addbox{
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px 20px;
+    width: 400px;
+    height: 300px;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.addbox h3, p{
+    font-family: Helvetica;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0px;
+    color: rgb(199, 196, 196);
+    
+}
+
+.contact{
+    height: 200px;
+}
+
+.contact h2{
+    font-family: Helvetica;
+    font-size: 30px;
+    color: rgb(199, 196, 196);
+    text-align: center;
+    margin: 20px 0px;
+  
+}
+
+.contact h5{
+    font-family: Helvetica;
+    font-size: 20px;
+    color: rgb(199, 196, 196);
+    text-align: center;
+    padding: 20px 0px;
+  
+}
+
+.copyright p{
+    font-family: Helvetica;
+    color: rgb(199, 196, 196);
+    font-size: 15px;
+    text-align: left;
+}
