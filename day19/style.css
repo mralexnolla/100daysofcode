@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;  
+  }
+  
+  body {
+    font-family: 'Helvetica', 'sans-serif';
+    font-size: 1.6rem;
+    color: #333;
+    width: 100%;
+    height: 100vh;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    padding: 0 1.5rem;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    padding: 0 1.5rem;
+    margin-top:20px;
+    margin-bottom:10px;
+    background: white;
+  }
+  
+  .main-bg-image {
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(https://static-assets.codecademy.com/Courses/Learn-CSS/Functions/main-bg-image.jpg) no-repeat;
+    background-size: cover;   
+    filter: brightness(0.6); 
+  }
+  
+  .card {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 2px .8rem 1rem rgba(0, 0, 0, .09);
+    border-radius: 8px 8px 0px 0px;
+    width: clamp(100px, 90%, 600px);
+  }
+  
+  .under {
+    letter-spacing: 0px;
+  }
+  
+  .image-info {
+    height: 25rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .bg-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: gray;
+    z-index: -1;
+    transition: all 2s ease-in-out;
+    border-radius: 8px 8px 0px 0px;
+    background-image: url(img/codetrain.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .card:hover .bg-image {
+    filter: saturate(0.2);
+    transform: scale(1.4);
+  }
+  
+  .location-details {
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #FFF;
+    position: relative;
+    top: 0;
+    left: 0;
+    letter-spacing: 2px;
+    border-radius: 8px 8px 0px 0px;
+    transform: translate(60%, 50%);
+  }
+  
+  .location-details i{
+    margin-right: 2rem;
+  }
+  
+  .send-to {
+    display: inline-block;
+    margin-top: 2rem;
+  }
+  .from {
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .date {
+    display: block;
+  }
+  
+  .card-body {
+    background: rgb(255, 247, 255);
+    padding: 2rem 3rem;
+    position: relative;
+  }
+  
+  .card-body::before,
+  .card-body::after {
+    content: '';
+    position: absolute;
+    border: 2px solid hsl(25, 47%, 86%);
+  
+  }
+  
+  .card-body::before {
+    top: 1.2rem;
+    bottom: 1.2rem;
+    right: 1.2rem;
+  }
+  
+  .card-body::before {
+    bottom: 1.2rem;
+    left: 1.2rem;
+    top: 1.2rem;
+  }
+    
+  
+  .card-body::after {
+    top: 1.2rem;
+    left: 1.2rem;
+    right: 1.2rem;
+  }
+  
+  .card-body::after {
+    top: 1.2rem;
+    left: 1.2rem;
+    bottom: 1.2rem;
+  }
+  
+  .card-title {
+    padding: 5px 0;
+    font-size: calc(2vw + 1.5rem);
+    line-height: 1;
+    text-align: center;
+    margin-bottom: .5em;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .header-modifier {
+    display: inline-block;
+    color:#6CACE4;
+    transition: transform .8s ease-in-out;
+    filter: drop-shadow(10px 5px 0.2rem rgba(236, 217, 203, 0.7));
+  }
+  
+  .header-modifier:hover {
+    transform: rotate(5deg);
+  }
+  
+  
+  .card-text {
+    display:inline-block;
+    position: relative;
+    text-align: center;
+    width: clamp(50px, 80%, 600px);
+    border-radius: 8px;
+    padding: 5px 0;
+    overflow-y: hidden;
+    left: calc(50% - 40%);
+    font-size: clamp(1.5rem, 1.8vw, 1.8rem);
+  }
+  
+  ul.activities {
+    align-items: center;
+    list-style: circle;
+    position: relative;
+    font-weight: bold;
+    color: hsla(208, 69%, 66%, 0.6);
+    margin: calc(1vw + 0.5rem) 2rem;
+    
+  
+  }
+  
+  li {
+    padding: 5px 0;  
+  }
+  
+  .activities a:hover{
+    cursor: pointer;
+  }
+  
+  .photo-link{
+    text-align: right;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .photo-link a {
+    color: rgba(236, 217, 203, 0.9);
+    position: relative;
+  }
+  
+  
+  
