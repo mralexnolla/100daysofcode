@@ -1,0 +1,189 @@
+*{
+    font-size: 25px;
+    line-height: 20px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 150px 50px auto 100px;
+    height: 100vh;
+    /* border: 1px solid red; */
+}
+
+.banner{
+    background-color: #B49BFF;
+    grid-area: 1 / 1 / 2 /  11;
+    color: #fff;
+    text-align: center;
+}
+
+.banner h1{
+    font-size: 1.5rem ;
+    line-height: 0.5rem;
+}
+
+.navbar{
+    background-color: black;
+    color: #fff;
+    grid-area: 2 / 1 / 3 / 11;
+    display: flex;
+    align-items: center;
+    
+}
+
+.navbar a{
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+.contentleft{
+    background-color: #C9B2A1;
+    grid-area: 3 / 1 / 4 / 4;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+/* Left pane*/
+
+.sideL{
+    /* border: 1px solid red; */
+    margin: 2px 0px; 
+    
+}
+
+.about-me{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.photo{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.photo p{
+    font-size: 0.8rem;
+}
+
+.profphoto{
+    background-color: #889FA5;
+    height: 300px;
+}
+
+.description{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.description p{
+    line-height: 30px;
+}
+
+.more-text{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.image1 , .image2, .image3{
+    background-color: #889FA5;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+/**/
+
+
+/* right section*/
+
+
+.contentright{
+    background-color: #C6A0BA;
+    grid-area: 3 / 4 / 4 /11 ;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.sider{
+    /* border: 1px solid red; */
+}
+
+.sid{
+    /* border: 1px solid red; */
+}
+
+.feed{
+    margin-bottom: 30px;
+}
+
+.feedt{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.feedt h1{
+    font-size: 0.9rem;
+}
+
+.feeddesc{
+    height: 55px;
+    display: flex;
+    align-items: center;  
+}
+
+.feeddesc p{
+    font-size: 0.8rem;
+}
+
+.feedimage{
+    background-color: #889FA5;
+    height: 300px;
+}
+
+.feedp1{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.feedp2{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+}
+
+/* **********/
+
+.foot{
+    background-color: #7D6FA2;
+    grid-area: 4 / 1 / 5 / 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.foot span{
+    font-weight: bold;
+
+}
+
