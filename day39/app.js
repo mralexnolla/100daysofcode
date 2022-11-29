@@ -1,3 +1,5 @@
+// Media class is the master class
+
 class Media{
     constructor(tittle){
       this._tittle = tittle;
@@ -37,6 +39,8 @@ class Media{
   
   }
   
+  // The Book Class
+  
   class Book extends Media{
     constructor(author, tittle, pages){
       super(tittle);
@@ -56,6 +60,8 @@ class Media{
   
   }
   
+  // The Movie Class
+  
   class Movie extends Media{
     constructor(director, tittle, runTime){
       super(tittle);
@@ -72,16 +78,22 @@ class Media{
     }
   }
   
+  // calling  the Book instance 
   const historyOfEverything = new Book('Bill Bryson', 'A Short History of Nearly Everything', 544);
+  
+  //if the value of isCheckedOut method is true this toggle will set it to false and vice versal
   
   historyOfEverything.toggleCheckOutStatus();
   
+  //using the new instance to check the value of isCheckedOut method. This outputs to true on the screen
   console.log(historyOfEverything.isCheckedOut);
   
+  //calling the addRating method with the new instance to get and sum the different ratings 
   historyOfEverything.addRating(4);
   historyOfEverything.addRating(5);
   historyOfEverything.addRating(5);
   
+  //calling the getAverageRating method to sum the rattings using a reducer. This out puts to 14
   console.log(historyOfEverything.getAverageRating());
   
   const speed = new Movie('Jan de Bont','Speed',116)
