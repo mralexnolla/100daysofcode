@@ -1,0 +1,80 @@
+body{
+    background-image: url("./money.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+table{
+    width: 80%;
+    margin: 40px auto;
+     background-color: rgba(250, 235, 215, 0.86);
+    
+}
+
+.list{
+    text-align: center;
+    width: 100%;
+}
+
+td{
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px 15px ;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+tr:nth-child(even), table.list thead> tr{
+    background-color: rgb(174, 167, 167);
+}
+
+input[type="text"],input[type="number"]{
+    width: 91%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+input[type="submit"],input[type="reset"]{
+    width: 30%;
+    background: rgb(249, 246, 246);
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    background: #4b99d8;
+    color: white;
+}
+
+input[type="reset"]:hover{
+    background: #4b99d8;
+    color: white;
+}
+
+button{
+    background: #eee;
+    padding: 6px 12px;
+    margin: 15px 0 10px;
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    background: #4b99d8;
+}
