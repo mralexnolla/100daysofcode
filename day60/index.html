@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <h4 class="mb-3">TODO App <span class="fs-6">#thankU4Ex16</span> </h4>
+
+        <div class="" id="addNew" data-bs-toggle="modal" data-bs-target="#form">
+            <span>Add New Task</span>
+            <i class="fas fa-plus"></i>
+        </div>
+
+        <h5 class="text-center my-3">Task</h5>
+        <div class="" id="tasks"></div>
+
+               <!-- Modal -->
+        <form class="modal fade" id="form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Add New Task</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close">
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Task Title</p>
+                        <input type="text" class="form-control" name="" id="textInput" />
+                        <div id="msg"></div>
+                        <br />
+                        <p>Due Date</p>
+                        <input type="date" class="form-control" name="" id="dateInput" />
+                        <br />
+                        <p>Description</p>
+                        <textarea name="" class="form-control" id="textarea" cols="30" rows="5"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" id="add" class="btn btn-primary">Add</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+    
+
+    <script src="./main.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
