@@ -30,13 +30,16 @@ for(const animal in animals){
   )
 }
 
+const showBackground = true;
+
 const animalFacts = (
 <div>
   <h1>{
       title === "" ? 'Click an animal for a fun fact': title }
   </h1>
 
-  {background}
+  {showBackground && background}  //if showBackground is true show background. Else dont show it
+  
 
   <p id='fact'></p>
 
