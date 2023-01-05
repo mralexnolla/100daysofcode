@@ -1,0 +1,24 @@
+body{
+    font-family: Arial;
+}
+
+.card-collection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.standout{
+    box-shadow: rgba(77, 25, 210, 0.328) 0px 1px 4px, rgb(0, 0, 0) 0px 0px 0px 3px;
+}
+
+h1,h2,h3,h4,h5,p{
+    text-align: center
+}
+
+@media only screen and (max-width:768px){
+    .card-collection{
+        grid-template-columns: 1fr;
+    }
+}
+
+
