@@ -1,0 +1,38 @@
+.container {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  z-index: 5;
+  background-color: var(--bg-color);
+  padding: 32px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+  max-width: 300px;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.container label {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.actionsContainer {
+  display: flex;
+  margin-top: 24px;
+  column-gap: 12px;
+}
+
+.actionsContainer button {
+  flex-grow: 1;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
